@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		90D323E6D221F7086664F90D /* Pods_IdeaVateNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FCA5F66DE2E1F6ABB1A3AFD /* Pods_IdeaVateNews.framework */; };
+		B098A78C25A58B930047CF19 /* IdeaVateNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B098A78B25A58B930047CF19 /* IdeaVateNewsTests.swift */; };
 		B0F8AC2C25A2FB9400F7C4BE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B0F8AC2B25A2FB9400F7C4BE /* GoogleService-Info.plist */; };
 		B0F8AC2F25A2FDC600F7C4BE /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0F8AC2E25A2FDC600F7C4BE /* Login.storyboard */; };
 		B0F8AC3325A2FED400F7C4BE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F8AC3225A2FED400F7C4BE /* LoginViewController.swift */; };
@@ -40,9 +41,22 @@
 		B0FE6985255187AD00F8299C /* ImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FE6984255187AD00F8299C /* ImageView+Extension.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B098A78E25A58B930047CF19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0FE694425515C9300F8299C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0FE694B25515C9300F8299C;
+			remoteInfo = IdeaVateNews;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		85CD4861F758342472C739D1 /* Pods-IdeaVateNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IdeaVateNews.release.xcconfig"; path = "Target Support Files/Pods-IdeaVateNews/Pods-IdeaVateNews.release.xcconfig"; sourceTree = "<group>"; };
 		9FCA5F66DE2E1F6ABB1A3AFD /* Pods_IdeaVateNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IdeaVateNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B098A78925A58B930047CF19 /* IdeaVateNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IdeaVateNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B098A78B25A58B930047CF19 /* IdeaVateNewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdeaVateNewsTests.swift; sourceTree = "<group>"; };
+		B098A78D25A58B930047CF19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0F8AC2B25A2FB9400F7C4BE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B0F8AC2E25A2FDC600F7C4BE /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		B0F8AC3225A2FED400F7C4BE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +93,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B098A78625A58B930047CF19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B0FE694925515C9300F8299C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -105,6 +126,15 @@
 				85CD4861F758342472C739D1 /* Pods-IdeaVateNews.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B098A78A25A58B930047CF19 /* IdeaVateNewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				B098A78B25A58B930047CF19 /* IdeaVateNewsTests.swift */,
+				B098A78D25A58B930047CF19 /* Info.plist */,
+			);
+			path = IdeaVateNewsTests;
 			sourceTree = "<group>";
 		};
 		B0F8AC2D25A2FDA700F7C4BE /* Storyboards */ = {
@@ -158,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				B0FE694E25515C9300F8299C /* IdeaVateNews */,
+				B098A78A25A58B930047CF19 /* IdeaVateNewsTests */,
 				B0FE694D25515C9300F8299C /* Products */,
 				93FFE0C9E23A1139645803AE /* Pods */,
 				2B5BE1DC40C50BF07B19EC6B /* Frameworks */,
@@ -168,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				B0FE694C25515C9300F8299C /* IdeaVateNews.app */,
+				B098A78925A58B930047CF19 /* IdeaVateNewsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -278,6 +310,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B098A78825A58B930047CF19 /* IdeaVateNewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B098A79025A58B930047CF19 /* Build configuration list for PBXNativeTarget "IdeaVateNewsTests" */;
+			buildPhases = (
+				B098A78525A58B930047CF19 /* Sources */,
+				B098A78625A58B930047CF19 /* Frameworks */,
+				B098A78725A58B930047CF19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B098A78F25A58B930047CF19 /* PBXTargetDependency */,
+			);
+			name = IdeaVateNewsTests;
+			productName = IdeaVateNewsTests;
+			productReference = B098A78925A58B930047CF19 /* IdeaVateNewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B0FE694B25515C9300F8299C /* IdeaVateNews */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0FE696325515C9B00F8299C /* Build configuration list for PBXNativeTarget "IdeaVateNews" */;
@@ -307,6 +357,10 @@
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = Ashish;
 				TargetAttributes = {
+					B098A78825A58B930047CF19 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = B0FE694B25515C9300F8299C;
+					};
 					B0FE694B25515C9300F8299C = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
@@ -326,11 +380,19 @@
 			projectRoot = "";
 			targets = (
 				B0FE694B25515C9300F8299C /* IdeaVateNews */,
+				B098A78825A58B930047CF19 /* IdeaVateNewsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B098A78725A58B930047CF19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B0FE694A25515C9300F8299C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -389,6 +451,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B098A78525A58B930047CF19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B098A78C25A58B930047CF19 /* IdeaVateNewsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B0FE694825515C9300F8299C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -422,6 +492,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B098A78F25A58B930047CF19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0FE694B25515C9300F8299C /* IdeaVateNews */;
+			targetProxy = B098A78E25A58B930047CF19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		B0FE695525515C9300F8299C /* Home.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -442,6 +520,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B098A79125A58B930047CF19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IdeaVateNewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.IdeaVateNewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IdeaVateNews.app/IdeaVateNews";
+			};
+			name = Debug;
+		};
+		B098A79225A58B930047CF19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = IdeaVateNewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.IdeaVateNewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IdeaVateNews.app/IdeaVateNews";
+			};
+			name = Release;
+		};
 		B0FE696125515C9B00F8299C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -597,6 +713,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B098A79025A58B930047CF19 /* Build configuration list for PBXNativeTarget "IdeaVateNewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B098A79125A58B930047CF19 /* Debug */,
+				B098A79225A58B930047CF19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B0FE694725515C9300F8299C /* Build configuration list for PBXProject "IdeaVateNews" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
