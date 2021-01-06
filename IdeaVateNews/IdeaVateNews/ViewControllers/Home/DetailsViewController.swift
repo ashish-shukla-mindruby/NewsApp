@@ -53,10 +53,14 @@ class DetailsViewController: UIViewController {
     }
     
     @IBAction func readFullNewsButtonAction(_ sender: Any) {
-        if let urlString = newsModel?.url {
-            if let url = URL(string: urlString) {
-                let safariVC = SFSafariViewController(url: url)
-                self.present(safariVC, animated: true, completion: nil)
+        if NetworkConnectivityManager.sharedInstance.reachability.connection == .unavailable {
+            self.showAlert(message: APPConstant.Alert.noInternet)
+        } else {
+            if let urlString = newsModel?.url {
+                if let url = URL(string: urlString) {
+                    let safariVC = SFSafariViewController(url: url)
+                    self.present(safariVC, animated: true, completion: nil)
+                }
             }
         }
     }
